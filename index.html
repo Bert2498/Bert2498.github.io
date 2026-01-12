@@ -2,40 +2,55 @@
 <html lang="en">
 <head>
     <title>Alberto G Martinez</title>
-    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
     <div class="banner">
-        <!--this is for the navigation bar up top of the screen-->
-        <div class="navbar">
-            <!--going to have to add a logo or something here, dont have anything atm-->
+        <canvas id="networkCanvas"></canvas>
+        <div class="navbar glass-effect">
             <div class="name">
-                <pre>
-ALBERTO
-G.
-MARTINEZ
-                </pre>
+                <h2>AGM</h2>
             </div>
             <ul>
-                <!--these are the references for the navigation bar-->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pages/aboutmepage.html">About Me</a></li>
                 <li><a href="pages/projectspage.html">Projects</a></li>
             </ul>
         </div>
-        <!--creating a new section on the page-->
+        
         <div class="content">
-            <h1>Hello</h1>
-            <p>Welcome to my page</p>
-            <!--adding some buttons-->
-            <div>
-                <button type="button"><span></span>Curious</button>
-                <button type="button"><span></span>Bored</button>
+            <div class="content-wrapper glass-effect">
+                <h1><span class="letter">H</span><span class="letter">i</span><span class="letter">,</span><span class="letter"> </span><span class="letter">I</span><span class="letter">'</span><span class="letter">m</span><span class="letter"> </span><span class="letter">A</span><span class="letter">l</span><span class="letter">b</span><span class="letter">e</span><span class="letter">r</span><span class="letter">t</span><span class="letter">o</span></h1>
+                <p>Page under construction, please wait..</p>
+                
+                <div class="button-group">
+                    <button class="btn btn-primary"><span></span>Explore Work</button>
+                    <button class="btn btn-secondary"><span></span>Get In Touch</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
